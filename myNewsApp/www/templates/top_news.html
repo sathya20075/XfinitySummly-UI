@@ -1,0 +1,34 @@
+
+<ion-view view-title="Top News" cache-view = "false">
+  <ion-content ng-controller="BusinessNewsShow" ng-init="loadBusinessNews()" >
+			<div class="row" ng-repeat="news in bus_resp" ng-if="$index % 4 === 0">
+					<div class="col col-25" ng-if="$index < bus_resp.length">
+						<div class="img-wrap">
+							<img ng-src="{{bus_resp[$index].thumbNailImage}}" width="100%" />
+							<span class="caption">{{bus_resp[$index].newsHeadline}}</span>
+						</div>		
+					</div>
+				<div class="col col-25 " ng-if="$index + 1 < bus_resp.length">
+					<div class="img-wrap">
+						<img ng-src="{{bus_resp[$index + 1].thumbNailImage}}" width="100%" />
+						<span class="caption">{{bus_resp[$index+1].newsHeadline}}</span>
+					</div>
+				</div>
+				
+				<div class="col col-25 " ng-if="$index + 2 < bus_resp.length">
+					<div class="img-wrap">
+						<img ng-src="{{bus_resp[$index + 2].thumbNailImage}}" width="100%" />
+						<span class="caption">{{bus_resp[$index+2].newsHeadline}}</span>
+					</div>
+				</div>
+
+				<div class="col col-25 " ng-if="$index + 3 < bus_resp.length">
+					<div class="img-wrap">
+						<img ng-src="{{bus_resp[$index + 3].thumbNailImage}}" width="100%" />
+						<span class="caption">{{bus_resp[$index+3].newsHeadline}}</span>
+					</div>
+				</div>
+
+		    </div>
+	</ion-content>
+</ion-view>

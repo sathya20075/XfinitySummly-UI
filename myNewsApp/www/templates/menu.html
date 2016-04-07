@@ -1,0 +1,40 @@
+
+  <ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+          <ion-nav-bar class="bar-stable">      
+            <ion-nav-buttons side="left">
+              <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+              </button>
+            </ion-nav-buttons>
+          </ion-nav-bar>
+          <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+      </ion-side-menu-content>    
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-stable header_bar">
+        <h1 class="title">Categories</h1>
+      </ion-header-bar>
+      <ion-content class="custom">
+        <ion-list>
+  		<ion-item menu-close href="#/app/top_news">
+            Top News
+          </ion-item>
+  		<ion-item menu-close href="#/app/SportsNewsCard">
+            Sports
+          </ion-item>
+  		<ion-item menu-close href="#/app/technology">
+            Technology
+          </ion-item>
+  		<ion-item menu-close href="#/app/politics">
+            Politics
+          </ion-item>
+  		<ion-item menu-close href="#/app/NewsCard">
+            Business
+          </ion-item>        
+  		<ion-item menu-close href="#/app/settings">
+            Settings
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+

@@ -1,0 +1,11 @@
+<ion-view view-title="Business News" cache-view = "false">
+	<ion-content ng-controller="NewsController">
+	<div class="list card" ng-repeat ="story in news">
+	     <a class="item item-thumbnail-left" href="#/NewsSummary/{{story.contentId}} {{story.newsHeadline}}">
+	               <img ng-src="{{story.thumbNailImage}}"/>
+	               <h2 class="story-title">{{story.newsHeadline}}</h2>
+	               <p>{{story.source}}</p>
+	              </a>
+	          </div> 
+	  </ion-content>  
+</ion-view>
